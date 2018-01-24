@@ -13,5 +13,5 @@ var localTime = {
     time.setHours(time.getHours()+localTime[el.getAttribute('data-location')]);
     el.getElementsByClassName("time")[0].innerHTML=time.toLocaleDateString() + " - " + time.toLocaleTimeString();
   });
-   var t = setTimeout(timeLoop, 500);
+   var t = setTimeout(timeLoop, 1000);
   }
